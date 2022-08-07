@@ -8,40 +8,42 @@
     <link rel="stylesheet" href="css/toggle-switch.css" />
     <title>Web App Dashboard</title>
   </head>
-  <body>
+  <body class="grid-container">
     <!-- HEADER -->
-    <header>
+    <header class="header">
       <h1>WebApp&#8482;</h1>
       <!-- bell icon container -->
-      <div class="bell_icon">
+      <div class="bell-icon">
         <img src="svgs/bell.svg" alt="Notification Icon" />
         <!-- notifications container -->
         <div class="notifications"></div>
       </div>
-      <img src="images/member-1.jpg" alt="Profile Image" />
-      <h2>Student Name</h2>
+      <div class="header">
+        <img class="round-img" src="images/member-1.jpg" alt="Profile Image" />
+        <h2>Student Name</h2>
+      </div>
     </header>
     <!-- NAV -->
-    <nav>
+    <nav class="navigation">
       <!-- home link -->
       <a href="">
-        <img src="svgs/home.svg" alt="Home Icon" />
+        <img class="svg" src="svgs/home.svg" alt="Home Icon" />
       </a>
       <!-- bar chart link -->
       <a href="">
-        <img src="svgs/bar-chart.svg" alt="Bar Chart Icon" />
+        <img class="svg" src="svgs/bar-chart.svg" alt="Bar Chart Icon" />
       </a>
       <!-- members link -->
       <a href="">
-        <img src="svgs/members.svg" alt="Members Icon" />
+        <img class="svg" src="svgs/members.svg" alt="Members Icon" />
       </a>
       <!-- settings link -->
       <a href="">
-        <img src="svgs/settings.svg" alt="Settings Icon" />
+        <img class="svg" src="svgs/settings.svg" alt="Settings Icon" />
       </a>
     </nav>
     <!-- MAIN -->
-    <main>
+    <main class="main">
       <!-- dashboard header -->
       <div class="main-header">
         <h2 class="headline">Dashboard</h2>
@@ -100,6 +102,7 @@
       </section>
       <!-- social stats section-->
       <!-- Facebook social stats -->
+      <h3>Social Stats</h3>
       <div class="social-container">
         <div class="social-image">
           <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -109,8 +112,8 @@
           </svg>
         </div>
         <div class="social-text">
-          <p>Facebook</p>
-          <p>10,320</p>
+          <p class="social-media">Facebook</p>
+          <p class="stat">10,320</p>
         </div>
       </div>
       <!-- Instagram social stats -->
@@ -123,8 +126,8 @@
           </svg>
         </div>
         <div class="social-text">
-          <p>Twitter</p>
-          <p>16,445</p>
+          <p class="social-media">Twitter</p>
+          <p class="stat">16,445</p>
         </div>
       </div>
       <!-- Twitter social stats -->
@@ -137,8 +140,8 @@
           </svg>
         </div>
         <div class="social-text">
-          <p>Twitter</p>
-          <p>22,1989</p>
+          <p class="social-media">Twitter</p>
+          <p class="stat">22,1989</p>
         </div>
       </div>
       <!-- new members widget -->
@@ -150,7 +153,7 @@
           <img
             src="images/member-1.jpg"
             alt="Vicoria Chambers"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="members-text">
             <p>Victoria Chambers</p>
@@ -163,7 +166,7 @@
           <img
             src="images/member-2.jpg"
             alt="Dale Byrd"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="members-text">
             <p>Dale Byrd</p>
@@ -176,7 +179,7 @@
           <img
             src="images/member-3.jpg"
             alt="Dawn Wood"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="members-text">
             <p>Dawn Wood</p>
@@ -189,7 +192,7 @@
           <img
             src="images/member-4.jpg"
             alt="Dan Oliver"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="members-text">
             <p>Dan Oliver</p>
@@ -208,7 +211,7 @@
           <img
             src="images/member-1.jpg"
             alt="Vicoria Chambers"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="activity-text">
             <p>
@@ -222,7 +225,7 @@
           <img
             src="images/member-2.jpg"
             alt="Dale Byrd"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="activity-text">
             <p>
@@ -237,7 +240,7 @@
           <img
             src="images/member-3.jpg"
             alt="Dawn Wood"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="activity-text">
             <p>
@@ -252,7 +255,7 @@
           <img
             src="images/member-4.jpg"
             alt="Dan Oliver"
-            class="profile-image"
+            class="profile-image round-img"
           />
           <div class="activity-text">
             <p>Dan Oliver posted <strong>WebApp's SEO Tips</strong></p>
