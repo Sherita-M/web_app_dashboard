@@ -17,10 +17,19 @@
 	border-radius: 50%;
 }
 
+.filter-white {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%);
+}
+
 .flex {
 	display: flex;
 	flex-direction: row;
 }
+
+.space-between {
+	display: flex;
+	justify-content: space-between;
+      }
 
 /* Hover & Link Styles*/
 button:hover {
@@ -50,12 +59,11 @@ body {
 .header{
 	display: flex;
 	justify-content: space-between;
-	/* padding: .5rem; */
 	background-color: var(--purple);
 	align-items: center;
 	color: var(--white);
 	width: auto;
-	padding: 0 20px 0 0;
+	padding: 0 20px 0 20px;
 }
 
 .second-header {
@@ -64,31 +72,55 @@ body {
 	fill: var(--white);
 	width: auto;
 	align-items: center;
-	justify-content: right;
+	/* justify-content: right; */
+	margin: 0; 
+	display: flex;
+	justify-content: flex-end;
 }
+
+h1 {
+	font-weight: 400;
+	
+}
+
+span.app {
+	margin: 0;
+	font-weight: 100;
+	white-space: nowrap;
+}
+
 .bell-icon {
-	width: 10%;
+	width: 15%;
 	padding-right: 1rem;
-	padding-top: 1rem;
+	padding-top: .5rem;
 	align-items: center;
-	border-right: 1px solid var(--dark-grey);
-	height: 50px;
+	border-right: 2px solid var(--dark-grey);
+	
+}
+
+.profile-icon {
+	width: 15%;
 }
 
 .profile-icon, .student-name {
-	width: 20%;
+	height: auto;
 	padding:.5rem;
 }
 
-
-profile-icon {
-	width: 10%;
+h2.student-name {
+	width: 40%;
+	font-size: 20px;
+	/* text-align: right; */
+	font-weight:300;
+    	overflow: hidden;
+    	white-space: nowrap;
 }
 
 h3 {
 	font-weight: 400;
 	text-transform: uppercase;
 	letter-spacing: 1px;
+	margin: 30px 0;
 }
 
 
@@ -102,20 +134,22 @@ nav {
 
  
 nav.navigation {
-	/* width: auto;  */
+	width: auto; 
 	height: auto;
-	justify-content: center;
 	display: flex;
-	
+	justify-content: space-evenly;
+	padding: 15px 0;	
 }
 
 img.svg {
-	width: 100%;
+	width: 3.125rem;
 	/* padding-left: 20px; */
 }
 
-main {
-	padding: 2rem 0 0 2rem;
+
+
+.main-container {
+	margin: 0 2rem;
 }
 
 
@@ -128,13 +162,15 @@ main {
 h2.headline {
 	display: inline-flex;
 	padding-right: 1rem;
+	margin-left: 2rem;
 }
 
 .tab {
-	display: float-right;
+	/* display: float-right; */
 	background-color: var(--light-grey);
 	border: 1px solid var(--dark-grey);
 	width: 100%;
+
 }
 
 
@@ -151,6 +187,13 @@ h2.headline {
 	color: var(--white);
 }
 
+.active {
+	/* border: 2px solid var(--dark-grey); */
+	background-color: var(--green-btn);
+	border-radius: 20px;
+	color: var(--white);
+}
+
 img {
 	width: 100%;
 }
@@ -159,6 +202,7 @@ img {
 
 .social-stats-container {
 	padding-bottom: 20px;
+	justify-content: center;
 }
 
 .social-container {
@@ -298,7 +342,7 @@ button, .form-field {
 	margin-bottom: 50px;
 }
 
-span {
+span.on-off-btn {
 	float: right;
 	margin-left: 10px;
 }
@@ -359,17 +403,17 @@ select {
 
 @media (min-width: 768px) {
 	.grid-container {
-		grid-template-columns: 55px 1fr;
+		grid-template-columns: 120px 1fr;
 		grid-template-areas: 
 			"header header"
 			"navigation main";
 	}
 
 	.main {
-		grid-template-columns: 50%;
+		grid-template-columns: 1fr;
 	}
 
-	.traffic, .social-container {
+	.traffic, .social-stats-container {
 		grid-column: 1 / span 2;
 	}
 
@@ -387,9 +431,105 @@ select {
 		.widget-container-half {
 		width: 45vw;
 	}
+
 	.svg {
 		width: 100%;
+	}
+
+
+
+
+
+	nav.navigation {
+		flex-direction: column;	
+		align-items: center;
+		justify-content: normal;
+		width: 122px;
+	}
+	
+	img.svg {
+		margin: 30%; 
+	}
+
+	a {
+		width: 100%;
+	}
+
+	main.main {
+		width: 100%;
+	}
+
+	.traffic-header {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	.large-view-flex {
+		display: flex;
+	}
+
+	.social-container {
+		margin-right: 10px;
+	}
+
+	.members-container, .activity-container {
+		flex-direction: row;
+		
+	}
+
+	.text-left {
+		display: flex;
+		text-align: left;
+		align-items: left;
+	}
+
+	.members-container p  {
+		/* text-align: left; */
+		margin: 0px;
+	}
+
+
+
+	.members-text {
+		margin: 14px;
+	}
+
+	.two-columns-tablet {
+		display: flex;
+		/* flex-direction: row; */
+	}
+
+
+	.mobile-users {
+		border-left: 2px solid var(--dark-grey);
+		padding-left: 20px; 
 	}
 }
 
 
+@media (min-width: 1024px) {
+	.two-columns-desktop {
+		display: flex;
+		/* flex-direction: row; */
+	}
+	.widget-container-half-desktop {
+		width: 45vw;
+	}
+	.recent-activity, .settings {
+		border-left: 2px solid var(--dark-grey);
+		padding-left: 20px;
+	}
+	.username, .form-area, #send {
+		width: 90%;
+	}
+	.username {
+		height: 30px;
+	}
+
+	.form-area {
+		height: 144px;
+	}
+
+
+}
