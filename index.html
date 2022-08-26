@@ -19,7 +19,6 @@
             src="svgs/bell.svg"
             style="width: 50px"
             alt="Notification Icon"
-            class="filter-white"
           />
           <!-- notifications container -->
           <div class="notifications"></div>
@@ -36,11 +35,11 @@
     <!-- NAV -->
     <nav class="navigation">
       <!-- home link -->
-      <a href="">
-        <img class="svg filter-white" src="svgs/home.svg" alt="Home Icon" />
+      <a href="#top">
+        <img class="svg filter-white" src="svgs/home.svg" alt="Home Icon"/>
       </a>
       <!-- bar chart link -->
-      <a href="">
+      <a href="#daily">
         <img
           class="svg filter-white"
           src="svgs/bar-chart.svg"
@@ -48,7 +47,7 @@
         />
       </a>
       <!-- members link -->
-      <a href="">
+      <a href="#members">
         <img
           class="svg filter-white"
           src="svgs/members.svg"
@@ -56,7 +55,7 @@
         />
       </a>
       <!-- settings link -->
-      <a href="">
+      <a href="#settings">
         <img
           class="svg filter-white"
           src="svgs/settings.svg"
@@ -99,7 +98,7 @@
         </section>
         <!-- daily traffic bar graph -->
         <div class="two-columns-tablet">
-        <section class="daily">
+        <section class="daily" id="daily">
           <h3>Daily Traffic</h3>
           <div class="widget-container-half">
             <!-- bar graph placeholder -->
@@ -175,7 +174,7 @@
         </div>
         <!-- new members widget -->
         <div class="two-columns-desktop">
-        <section class="members widget-container-half-desktop">
+        <section class="members widget-container-half-desktop" id="members">
           <h3>New Members</h3>
 
           <!-- (Victoria Chambers) -->
@@ -319,7 +318,7 @@
         </section>
         <!-- message user section ends -->
         <!-- settings section -->
-        <section class="settings widget-container-half-desktop">
+        <section class="settings widget-container-half-desktop" id="settings">
           <h3>Settings</h3>
           <!-- custom CSS toggle code -->
           <label class="switch-light switch-material" onclick="">

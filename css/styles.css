@@ -17,10 +17,6 @@
 	border-radius: 50%;
 }
 
-.filter-white {
-	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%);
-}
-
 .flex {
 	display: flex;
 	flex-direction: row;
@@ -30,6 +26,10 @@
 	display: flex;
 	justify-content: space-between;
       }
+
+.filter-white {
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%);
+}
 
 /* Hover & Link Styles*/
 button:hover {
@@ -44,6 +44,8 @@ a:visited {
 a:hover {
 	color: purple;
 }
+
+/* Grid Container and Body Styles */
 
 .grid-container {
 	display: grid;
@@ -95,8 +97,14 @@ span.app {
 	padding-right: 1rem;
 	padding-top: .5rem;
 	align-items: center;
-	border-right: 2px solid rgba(218, 218, 218, .3);	
+	border-right: 2px solid rgba(218, 218, 218, .3);
+	filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%);
 }
+
+.bell-icon:hover {
+	filter: invert(86%) sepia(7%) saturate(1822%) hue-rotate(78deg) brightness(85%) contrast(90%);
+}
+
 
 .profile-icon {
 	width: 15%;
@@ -195,6 +203,10 @@ h2.headline {
 	background-color: var(--green-btn);
 	border-radius: 20px;
 	color: var(--white);
+}
+
+#traffic-chart.chart, #daily-chart.chart, #Mobile-chart.chart {
+	margin: 30px; 
 }
 
 img {
@@ -493,6 +505,7 @@ select {
 	.large-view-flex {
 		display: flex;
 	}
+	
 
 	.social-container {
 		margin-right: 10px;
