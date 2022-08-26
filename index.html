@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
-    <link rel="stylesheet" href="css/toggle-switch.css" />
+    <link rel="stylesheet" href="css/toggle-switch.css"/>
     <title>Web App Dashboard</title>
   </head>
   <body class="grid-container">
@@ -20,6 +20,7 @@
             style="width: 50px"
             alt="Notification Icon"
           />
+          <div class="notification-dot"></div>
           <!-- notifications container -->
           <div class="notifications"></div>
         </div>
@@ -122,8 +123,9 @@
             <!-- element bar graph will attach to -->
             <canvas class="chart" id="mobile-chart"></canvas>
           </div>
-        </div>
         </section>
+        </div>
+      
         <!-- social stats section-->
         <!-- Facebook social stats -->
         <div class="social-stats-container">
@@ -250,6 +252,7 @@
             </div>
             <p>4 hours ago</p>
           </div>
+          <span class="arrow">&gt;</span>
           <!-- (Dale Byrd) -->
           <div class="activity-container">
             <img
@@ -265,6 +268,7 @@
             </div>
             <p>5 hours ago</p>
           </div>
+          <span class="arrow">&gt;</span>
           <!-- (Dawn Wood) -->
           <div class="activity-container">
             <img
@@ -280,6 +284,7 @@
             </div>
             <p>5 hours ago</p>
           </div>
+          <span class="arrow">&gt;</span>
           <!-- (Dan Oliver) -->
           <div class="activity-container">
             <img
@@ -292,6 +297,7 @@
             </div>
             <p>1 day ago</p>
           </div>
+          <span class="arrow">&gt;</span>
         </section>
       </div>
         <!-- recent activity section ends-->
@@ -299,7 +305,7 @@
         <div class="two-columns-desktop">
         <section class="message widget-container-half-desktop">
           <h3>Message User</h3>
-          <form action="" class="widget-container">
+          <form class="widget-container">
             <input
               type="text"
               placeholder="Search for User"

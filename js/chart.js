@@ -1,9 +1,11 @@
+const trafficCanvas = document.getElementById("traffic-chart");
+const dailyCanvas = document.getElementById("daily-chart");
+const mobileCanvas = document.getElementById("mobile-chart");
+
 // Chart Widgets
 // Traffic Line Chart
-const trafficCanvas = document.getElementById("traffic-chart");
-
 let trafficData = {
-	lables: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
+	labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
 	datasets: [{
 		data: [750, 1250, 1000, 2000, 1500, 1750, 120, 1850, 2250, 1500, 2500],
 		backgroundColor: 'rgba(116, 119, 191, .3)',
@@ -37,8 +39,6 @@ let trafficChart = new Chart(trafficCanvas, {
 });
 
 // Daily Traffic Bar Graph
-const dailyCanvas = document.getElementById("daily-chart");
-
 const dailyData = {
 	labels: ["S", "M", "T", "F", "S"],
 	datasets: [{
@@ -70,8 +70,6 @@ let dailyChart = new Chart(dailyCanvas, {
 });
 
 // Mobile Doughnut Chart
-const mobileCanvas = document.getElementById("mobile-chart");
-
 const mobileData = {
 	labels: ["Desktop", "Tablet", "Phones"],
 	datasets: [{
