@@ -407,6 +407,21 @@ select {
 	width: 95vw;
 }
 
+/* Alert Banner Styles */
+
+.alert-banner {
+	/* width: 300px; */
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: var(--purple);
+	margin: 20px;
+	padding: 0 1.5rem;
+	border-radius: 10px;
+	color: var(--white);
+	font-weight: 300;
+}
+
 
 @media (min-width: 768px) {
 	.grid-container {
@@ -456,6 +471,7 @@ select {
 	
 	img.svg {
 		margin: 30%; 
+		padding: 0;
 	}
 
 	
