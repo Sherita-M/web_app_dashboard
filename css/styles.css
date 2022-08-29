@@ -88,28 +88,29 @@ span.app {
 }
 
 .bell-icon {
-	width: 15%;
+	display: flex;
 	height: auto;
 	padding-right: 1rem;
 	padding-top: .5rem;
-	align-items: center;
 	border-right: 2px solid rgba(218, 218, 218, .3); 
-	/* filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(12deg) brightness(106%) contrast(101%); */
 }
 
-.bell-icon:hover {
-	filter: invert(86%) sepia(7%) saturate(1822%) hue-rotate(0) brightness(85%) contrast(90%); 
+.bell-svg {
+	width: 40px;
+} 
+
+.bell-svg:hover {
+	fill:rgb(50, 203, 50);
 }
 
 .notification-dot {
 	background-color: rgb(50, 203, 50);
-	width: .5rem;
-	height: .5rem;
-	position: absolute;
-	top: 15px; 
-	right: 170px; 
+	width: 8px;
+	height: 8px;
 	border-radius: 50%;
 }
+
+
 
 
 .profile-icon {
@@ -124,7 +125,6 @@ span.app {
 h2.student-name {
 	width: 40%;
 	font-size: 20px;
-	/* text-align: right; */
 	font-weight:300;
     	overflow: hidden;
     	white-space: nowrap;
@@ -162,7 +162,6 @@ img.svg {
 
 .chart {
 	width: 3.125rem;
-	/* padding-left: 20px; */
 }
 
 .main-container {
@@ -180,6 +179,7 @@ h2.headline {
 	display: inline-flex;
 	padding-right: 1rem;
 	margin-left: 2rem;
+	font-weight: 400;
 }
 
 .tab {
@@ -191,7 +191,7 @@ h2.headline {
 }
 
 
-/* Traffic Section Styles */
+/* Traffic & Mobile User Section Styles */
 .traffic-nav li {
 	display: inline-flex;
 	padding: .5rem;
@@ -221,6 +221,10 @@ img {
 
 .chart {
 	width: 100%;
+}
+
+canvas#mobile-chart.chart {
+	margin-bottom: 30px;
 }
 
 /* SOCIAL STATS */
@@ -263,7 +267,7 @@ p.stat {
 
 }
 
-svg {
+.social-image {
 	width: 40px;
 	background-color: var(--purple);
 	padding: 1rem;
@@ -294,6 +298,10 @@ svg {
 a {
 	color: var(--purple);
 	text-decoration: none;
+}
+
+strong {
+	font-weight: 400;
 }
 
 .activity-container{
@@ -555,36 +563,50 @@ select {
 		text-align: left;
 		width: auto;
 		padding-left: 10px;
+		justify-content: left;
 	}
- 
-	/* .activity-text p {
-		width: auto; 
-		margin: 10px 5px 10px;
-		right: 20px; 
-		align-items: center;
-	} */
+
+	.activity-container {
+		display: flex;
+		justify-content: flex-start;
+	}
 
 	.arrow {
 		visibility: visible;
 		width: auto;
 		margin-left: auto; 
 		margin-right: 30px; 
+		font-size: 25px;
+		transform: scale(1, 1);
+		color: var(--purple);
 	}
 
 
 	.two-columns-tablet {
 		display: flex;
-		/* flex-direction: row; */
 	}
 
+	canvas#mobile-chart.chart{
+		margin: 30px;
+	}
 
 	.mobile-users {
 		border-left: 2px solid var(--dark-grey);
 		padding-left: 20px; 
 	}
 
+	.setting-notifications{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
 	span.on-off-btn {
-	
+		margin-left: 60px; 
+	}
+
+	.profile-btn{
+		margin-right: 37px;
 	}
 
 }
