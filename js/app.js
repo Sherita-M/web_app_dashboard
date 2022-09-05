@@ -30,6 +30,6 @@ send.addEventListener("click", () => {
 	} else if (message.value === "") {
 		alert("Please fill out message field before sending");
 	} else {
-		alert(`Message successfully sent to: $(user.value)`);
+		alert(`Message successfully sent to: ${user.value}`);
 	}
 });
