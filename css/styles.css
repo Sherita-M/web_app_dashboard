@@ -10,6 +10,8 @@
 	--darker-grey: #707070;
 	--green-btn: #81C98F;
 	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
 }
 
 .grid-container {
@@ -32,6 +34,7 @@
 
 .main {
 	grid-area: main;
+	margin: 0 32px;
 }
 
 
@@ -70,7 +73,6 @@ a:hover {
 body {
 	width: 100%;
 	margin: 0;
-	
 }
 
 /* HEADER STYLES */
@@ -183,11 +185,12 @@ img.svg {
 }
 
 .chart {
-	width: 3.125rem;
+	/* width: 3.125rem; */
 }
 
 .main-container {
-	margin: 0 2rem;
+	width: 100%;
+
 }
 
 
@@ -243,6 +246,7 @@ img {
 
 .chart {
 	width: 100%;
+	margin: 0;
 }
 
 canvas#mobile-chart.chart {
@@ -430,7 +434,7 @@ select {
 
 
 .width-container-full, .width-container-half {
-	width: 95vw;
+	width: 95vw; /* 95vw */
 }
 
 /* Alert Banner Styles */
@@ -475,14 +479,14 @@ select {
 	}
 
 	.widget-container-full {
-		width: 90vw;
+		width: 90vw; /* 90vw */
 	}
 		.widget-container-half {
-		width: 45vw;
+		width: 45vw; /* 45vw */
 	}
 
 	.svg {
-		width: 100%;
+		width: 100%; 
 	}
 
 
