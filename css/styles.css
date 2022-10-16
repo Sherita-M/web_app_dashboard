@@ -15,6 +15,7 @@
 }
 
 .grid-container {
+	display: grid;
 	grid-template-columns: 100%;
 	grid-template-rows: auto;
 	grid-template-areas:
@@ -34,7 +35,6 @@
 
 .main {
 	grid-area: main;
-	margin: 0 32px;
 }
 
 
@@ -92,7 +92,6 @@ body {
 	fill: var(--white);
 	width: auto;
 	align-items: center;
-	/* justify-content: right; */
 	margin: 0; 
 	display: flex;
 	justify-content: flex-end;
@@ -184,19 +183,20 @@ img.svg {
 	padding-left: 20px;
 }
 
-.chart {
-	/* width: 3.125rem; */
-}
 
 .main-container {
 	width: 100%;
+}
 
+.main-margin {
+	margin: 0 32px; 
 }
 
 
 /* Dashboard Styles */
 .main-header {
 	display: inline-flex;
+	width: 100%;
 }
 
 
@@ -208,11 +208,10 @@ h2.headline {
 }
 
 .tab {
-	/* display: float-right; */
 	background-color: var(--light-grey);
-	border: 1px solid var(--dark-grey);
+	border-left: 1px solid var(--dark-grey);
+	border-bottom: 1px solid var(--dark-grey);
 	width: 100%;
-
 }
 
 
@@ -230,7 +229,6 @@ h2.headline {
 }
 
 .active {
-	/* border: 2px solid var(--dark-grey); */
 	background-color: var(--green-btn);
 	border-radius: 20px;
 	color: var(--white);
@@ -321,6 +319,10 @@ p.stat {
 	font-weight: 300;
 }
 
+.members-container {
+	margin-right: 30px;
+}
+
 a {
 	color: var(--purple);
 	text-decoration: none;
@@ -337,7 +339,8 @@ strong {
 	align-items: center;
 }
 
-.members-container img, .activity-container img {
+
+img.profile-image.round-img {
 	width: 20%;
 }
 
@@ -356,7 +359,6 @@ input, textarea {
 	display: flex;
 	width: 100%;
 	margin-bottom: 20px;
-	/* padding: 15px;  */
 	border: 2px solid var(--dark-grey);
 	border-radius: 10px;
 	background-color: var(--light-grey);
@@ -426,15 +428,8 @@ select {
 
 
 
-
-.main {
-	display: grid;
-}
-
-
-
 .width-container-full, .width-container-half {
-	width: 95vw; /* 95vw */
+	width: 95vw; 
 }
 
 /* Alert Banner Styles */
@@ -489,10 +484,6 @@ select {
 		width: 100%; 
 	}
 
-
-
-
-
 	nav.navigation {
 		flex-direction: column;	
 		align-items: center;
@@ -508,10 +499,6 @@ select {
 	
 
 	a {
-		width: 100%;
-	}
-
-	main.main {
 		width: 100%;
 	}
 
@@ -541,7 +528,6 @@ select {
 	}
 
 	.members-container p  {
-		/* text-align: left; */
 		margin: 0px;
 		width: 100%;
 	}
@@ -570,6 +556,10 @@ select {
 	.activity-container {
 		display: flex;
 		justify-content: flex-start;
+	}
+
+	#profile-img {
+		width: 100px;
 	}
 
 	.arrow {
@@ -613,6 +603,9 @@ select {
 }
 
 @media (min-width: 1024px) {
+	.grid-container{
+		max-width: 100%;
+	}
 	.two-columns-desktop {
 		display: flex;
 		flex-direction: row;
