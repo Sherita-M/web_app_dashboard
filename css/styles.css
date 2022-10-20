@@ -117,7 +117,7 @@ span.app {
 }
 
 .bell-svg {
-	width: 40px;
+	width: 35px;
 } 
 
 .bell-svg:hover {
@@ -147,10 +147,11 @@ span.app {
 
 h2.student-name {
 	width: 40%;
-	font-size: 20px;
+	font-size: 15px;
 	font-weight:300;
     	overflow: hidden;
     	white-space: nowrap;
+
 }
 
 h3 {
